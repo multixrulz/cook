@@ -21,6 +21,7 @@
 
 /* Styles for the path of hierarchical pages */
 #pagepath {
+ display: none;
  font-size: 10px; /* same as .nav ul in trac.css */
  float: left;
  padding: .4em 0;
@@ -96,6 +97,7 @@
 .wiki-toc-un ul, .wiki-toc-un ol { list-style: none; }
 
 div.trac-modifiedby {
+ display: none;
  margin: .3em .5em;
  color: #888;
  font-size: 80%;

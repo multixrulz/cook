@@ -7,7 +7,7 @@ body {
  padding: 0;
 }
 body, th, tr {
- font: normal 13px Verdana,Arial,'Bitstream Vera Sans',Helvetica,sans-serif;
+ font: normal 4vw Verdana,Arial,'Bitstream Vera Sans',Helvetica,sans-serif;
 }
 h1, h2, h3, h4 {
  font-family: Arial,Verdana,'Bitstream Vera Sans',Helvetica,sans-serif;
@@ -15,9 +15,9 @@ h1, h2, h3, h4 {
  letter-spacing: -0.018em;
  page-break-after: avoid;
 }
-h1 { font-size: 19px; margin: .15em 1em 0.5em 0 }
-h2 { font-size: 16px }
-h3 { font-size: 14px }
+h1 { font-size: 140%; margin: .15em 1em 0.5em 0 }
+h2 { font-size: 120% }
+h3 { font-size: 110% }
 hr { border: none;  border-top: 1px solid #ccb; margin: 2em 0 }
 address { font-style: normal }
 img { border: none }
@@ -45,7 +45,7 @@ h4 :link, h4 :visited, h5 :link, h5 :visited, h6 :link, h6 :visited {
 .anchor:link, .anchor:visited {
  border: none;
  color: #d7d7d7;
- font-size: .8em;
+ font-size: 80%;
  vertical-align: text-top;
 }
 * > .anchor:link, * > .anchor:visited {
@@ -232,8 +232,8 @@ form.mod #changeinfo .options { padding: 0 0 0.5em 1em }
 
 /* Header */
 #header hr { display: none }
-#header h1 { margin: 1.5em 0 -1.5em; padding: 0 }
-#header img { border: none; margin: 0 0 -3em }
+#header h1 { display: none; margin: 1.5em 0 -1.5em; padding: 0 }
+#header img { display: none; border: none; margin: 0 0 -3em }
 #header :link, #header :visited, #header :link:hover, #header :visited:hover {
  background: transparent;
  color: #555;
@@ -245,19 +245,21 @@ form.mod #changeinfo .options { padding: 0 0 0.5em 1em }
 
 /* Quick search */
 #search {
+ display: none;
  clear: both;
- font-size: 10px;
+ font-size: 80%;
  height: 2.2em;
  margin: 0 0 1em;
  text-align: right;
 }
-#search input { font-size: 10px }
+#search input { font-size: 80% }
 #search label { display: none }
 
 /* Navigation */
 .nav h2, .nav hr { display: none }
 .nav ul {
- font-size: 10px;
+ display: none;
+ font-size: 80%;
  list-style: none;
  margin: 0;
  padding: 0;
@@ -298,7 +300,8 @@ form.mod #changeinfo .options { padding: 0 0 0.5em 1em }
 
 /* Main navigation bar */
 #mainnav {
- font: normal 10px verdana,'Bitstream Vera Sans',helvetica,arial,sans-serif;
+ display: none;
+ font: normal 80% verdana,'Bitstream Vera Sans',helvetica,arial,sans-serif;
  box-shadow: 0 .5em 1.5em #eee;
  border: 1px solid #e4e4e4;
  border-radius: .5em;
@@ -348,6 +351,7 @@ form.mod #changeinfo .options { padding: 0 0 0.5em 1em }
 
 /* Context-dependent navigation links */
 #ctxtnav {
+ display: none;
  min-height: 1em;
  padding: .4em 0;
 }
@@ -376,16 +380,17 @@ form.mod #changeinfo .options { padding: 0 0 0.5em 1em }
 
 /* Alternate links */
 #altlinks {
+ display: none;
  clear: both;
  margin-top: .4em;
  text-align: center;
 }
-#altlinks h3 { font-size: 12px; letter-spacing: normal; margin: 0 }
+#altlinks h3 { font-size: 95%; letter-spacing: normal; margin: 0 }
 #altlinks ul { list-style: none; margin: 0; padding: 0 }
 #altlinks li {
  border-right: 1px solid #d7d7d7;
  display: inline;
- font-size: 11px;
+ font-size: 90%;
  line-height: 1.5;
  padding: 0 1em;
  white-space: nowrap;
@@ -408,18 +413,20 @@ form.mod #changeinfo .options { padding: 0 0 0.5em 1em }
 
 /* Footer */
 #footer {
+ display: none;
  clear: both;
  color: #bbb;
- font-size: 10px;
+ font-size: 80%;
  height: 31px;
  padding: .25em 0;
 }
 #footer :link, #footer :visited { color: #bbb; }
 #footer hr { display: none }
-#footer #tracpowered { border: 0; float: left }
-#footer #tracpowered:hover { background: transparent }
-#footer p { margin: 0 }
+#footer #tracpowered { display: none; border: 0; float: left }
+#footer #tracpowered:hover { display: none; background: transparent }
+#footer p { display: none; margin: 0 }
 #footer p.left {
+ display: none;
  float: left;
  margin-left: 1em;
  padding: 0 1em;
@@ -427,6 +434,7 @@ form.mod #changeinfo .options { padding: 0 0 0.5em 1em }
  border-right: 1px solid #d7d7d7;
 }
 #footer p.right {
+ display: none;
  float: right;
  text-align: right;
 }
@@ -525,12 +533,12 @@ h2 .trac-count, h3 .trac-count {
  border-radius: 1em;
  box-shadow: .2em .2em .7em 0 #777;
  float: right;
- font-size: 9px;
+ font-size: 75%;
  padding: .8em;
  position: relative;
  margin: 0 1em 1em;
 }
-#prefs input, #prefs select { font-size: 9px; vertical-align: middle }
+#prefs input, #prefs select { font-size: 75%; vertical-align: middle }
 #prefs fieldset {
  background: transparent;
  border: none;
@@ -541,7 +549,7 @@ h2 .trac-count, h3 .trac-count {
 #prefs fieldset legend {
  background: transparent;
  color: #000;
- font-size: 9px;
+ font-size: 75%;
  font-weight: normal;
  margin: 0 0 0 -1.5em;
  padding: 0;
